@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Task</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="rates">
+                <h2 class="rates__title title">Current exchange rate for today <span id="nowTime"
+                        class="nowTime"></span>
+                </h2>
+                <div class="rates__valute"></div>
+
+                <form id="formCurrency" class="formCurrency">
+                    <div class="wrapper">
+                        <div class="formCurrency__wrapper formCurrency__wrapper1">
+                            <label for="name">entrance:</label>
+
+                            <select disabled name="" id="">
+                                <option value="RUB" selected>RUB — Рубли</option>
+                            </select>
+                            <input id="input" type="number" class="form-control" id="name" autofocus />
+                        </div>
+                        <div class="formCurrency__wrapper formCurrency__wrapper2">
+                            <label for="name">at the exit:</label>
+                            <select id="select" class="form-control" id="exampleFormControlSelect1">
+                                <option value="USD" selected>USD — Доллары</option>
+                                <option value="EUR" selected>EUR — Евро</option>
+                                <option value="GBP" selected>GBP — Фунты</option>
+                            </select>
+                            <input id="result" type="number" class="form-control" id="name" />
+                        </div>
+                    </div>
+                    <button id="saveExchange" class="btn">Save exchange</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div id="history" class="history">
+                <h2 class="history__title title">Last exchange</h2>
+                <div id="historyList" class="history__list"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <table id="table" class="table">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
